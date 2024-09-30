@@ -1,3 +1,2 @@
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
 import './node_modules/bootstrap/dist/css/bootstrap.css'
+import './style.css'
