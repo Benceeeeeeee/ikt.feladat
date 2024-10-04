@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <hr style="margin-top: 30px;">
@@ -12,12 +14,27 @@
             <h1><strong>Autó konfigurátor</strong></h1>
         </div>
         <hr>
+        <div class="rendezes">
+            <div id="box" style="border: 5px solid red; position: relative; height: 100vh; width: 60%;">
+                <div class="image-container">
+                    <img id="kep"
+                        src="https://automobiles.honda.com/platform/api/v4/images/exterior/02?config=M:FL5G4RGW$EC:R-513$HC:undefined$IC:BR$O:$F:FIFS$ECC:RE$ECX:&width=1400+1"
+                        alt="honda" style="width: 770px; border: 1px solid black;">
+                    <button id="elozoKepGomb" class="btn btn-secondary image-btn Elozo-btn">&lt;</button>
+                    <button id="kovetkezoKepGomb" class="btn btn-secondary image-btn Kovi-btn">&gt;</button>
+                </div>
+            </div>
 
-        <div style="border: 5px solid red; position: relative; height: 100vh; width: 60%;">
-            <img src="https://www.honda.hu/content/dam/central/cars/generic/flyout/civic-type-r/23YM-Type-R-flyout.png/jcr:content/renditions/c2_r.png" alt="honda" style="width: 770px; border: 5px solid red;">
+            <div id="box" class="rendezes" style="background-color: lightgray;border: 5px solid red; position: relative; width: 40%;">
+                <button id="pirosSzin" class="color-btn btn btn-danger category-btn" data-set="piros">Piros</button>
+                <button id="kekSzin" class="color-btn btn btn-primary category-btn" data-set="kek">Kék</button>
+                <button id="feketeSzin" class="color-btn btn btn-dark category-btn" data-set="fekete">Fekete</button>
+                <button id="feherSzin" class="color-btn btn btn-light category-btn" data-set="feher">Fehér</button>
+            </div>
         </div>
     </div>
 
-  <script type="module" src="/kocsik.js"></script>
+    <script type="module" src="/kocsik.js"></script>
 </body>
+
 </html>
