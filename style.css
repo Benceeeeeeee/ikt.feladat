@@ -1,9 +1,13 @@
-select{
+select {
   background-color: rgb(58, 57, 57);
   color: white;
 }
 
-select option{
+select option {
   background-color: white;
   color: black;
+}
+
+.kattintas{
+  cursor: pointer;
 }
