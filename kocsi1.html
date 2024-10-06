@@ -54,7 +54,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="margin-top: 15px;">
                         <div class="card muszakiKartya" style="width:250px;">
                             <img style="width: 100px; margin: 0 auto;" src="https://www.honda.hu/content/dam/central/cars/civic-type-r-2023/Overview/Honda-civic-type-r-05-1x1.png/_jcr_content/renditions/c2_r.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -90,6 +90,25 @@
                     </div>
                 </div>
                 <hr>
+
+                <div>
+                    <label>Extrák:</label><br>
+                    <input type="checkbox" id="roof-rack" value="50000" onclick="updatePrice()">
+                    <label for="roof-rack">Tetőcsomagtartó (+50 000 Ft)</label><br>
+                    <input type="checkbox" id="heated-seats" value="80000" onclick="updatePrice()">
+                    <label for="heated-seats">Fűthető ülések (+80 000 Ft)</label><br>
+                    <input type="checkbox" id="navigation" value="120000" onclick="updatePrice()">
+                    <label for="navigation">Navigációs rendszer (+120 000 Ft)</label><br>
+                    <input type="checkbox" id="winter-tires" value="60000" onclick="updatePrice()">
+                    <label for="winter-tires">Téli gumiszett (+60 000 Ft)</label><br>
+                    <input type="checkbox" id="race-transmission" value="200000" onclick="updatePrice()">
+                    <label for="race-transmission">Verseny váltó (+200 000 Ft)</label><br>
+                    <input type="checkbox" id="nitro" value="500000" onclick="updatePrice()">
+                    <label for="nitro">Nitró (+500 000 Ft)</label>
+                </div>
+                <hr>
+                <h2>Összesített Ár: <span id="total-price">15 000 000 Ft</span></h2>
+                
             </div>
         </div>
     </div>
