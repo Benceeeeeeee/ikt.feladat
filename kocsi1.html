@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <hr style="margin-top: 30px;">
@@ -12,12 +14,87 @@
             <h1><strong>Autó konfigurátor</strong></h1>
         </div>
         <hr>
+        <div class="rendezes">
+            <div id="box" style=" position: relative; height: 100vh; width: 60%;">
+                <div class="image-container">
+                    <img id="kep"
+                        src="https://automobiles.honda.com/platform/api/v4/images/exterior/02?config=M:FL5G4RGW$EC:R-513$HC:undefined$IC:BR$O:$F:FIFS$ECC:RE$ECX:&width=1400+1"
+                        alt="honda" style="width: 770px; border: 1px solid black;">
+                    <button id="elozoKepGomb" class="btn btn-secondary image-btn Elozo-btn">&lt;</button>
+                    <button id="kovetkezoKepGomb" class="btn btn-secondary image-btn Kovi-btn">&gt;</button>
+                </div>
 
-        <div style="border: 5px solid red; position: relative; height: 100vh; width: 60%;">
-            <img src="https://www.honda.hu/content/dam/central/cars/generic/flyout/civic-type-r/23YM-Type-R-flyout.png/jcr:content/renditions/c2_r.png" alt="honda" style="width: 770px; border: 5px solid red;">
+                <hr style="margin-top: 30px;">
+                     <div>
+                        <h2 style="text-align: center;"><strong>Műszaki adatok</strong></h2>
+                    </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto; margin: 0 auto;" src="https://www.honda.hu/content/dam/central/cars/civic-type-r-2023/Overview/Honda-civic-type-r-02-1x1.png/_jcr_content/renditions/c2_r.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Kétliteres, négyhengeres VTEC TURBO motorral, amely 329 LE maximális teljesítményt és 420 Nm nyomatékot nyújt.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;" src="https://www.honda.hu/content/dam/central/cars/civic-type-r-2023/Overview/Honda-civic-type-r-03-1x1.png/_jcr_content/renditions/c2_r.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">A Type R 5,4 másodperc alatt gyorsul nulláról 100 km/h-ra.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;" src="https://www.honda.hu/content/dam/central/cars/civic-type-r-2023/Overview/Honda-civic-type-r-04-1x1.png/_jcr_content/renditions/c2_r.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Hatfokozatú kézi sebességváltó, amelyet a fordulatszám-szabályzó rendszer segít a pontos sebességváltás érdekében.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;" src="https://www.honda.hu/content/dam/central/cars/civic-type-r-2023/Overview/Honda-civic-type-r-05-1x1.png/_jcr_content/renditions/c2_r.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">2’23”: A Type R a leggyorsabb elsőkerék-meghajtású autó, amely valaha is koptatta az 5,8 km-es, legendás szuzukai versenypálya aszfaltcsíkját.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box" style="background-color: rgba(211, 211, 211, 0.514); position: relative; width: 40%;">
+                <hr>
+                     <div>
+                        <h2 style="text-align: center;"><strong>Tervezés</strong></h2>
+                    </div>
+                <hr>                
+                <div class="rendezes">
+                    <div style="text-align: center;">
+                        <button id="pirosSzin" class="color-btn category-btn" style="background-color: rgba(214,16,33,255);" data-set="piros">Piros</button>
+                        <p></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="feketeSzin" class="color-btn category-btn" style="background-color: black;color: white" data-set="fekete">Fekete</button>
+                        <p></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="kekSzin" class="color-btn category-btn" style="background-color: rgba(0,114,184,255); color: white;" data-set="kek">Kék</button>
+                        <p style="border: 2px solid black;">+50000Ft</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="feherSzin" class="color-btn category-btn" style="background-color: white;" data-set="feher">Fehér</button>
+                        <p style="border: 2px solid black;">+50000Ft</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
     </div>
 
-  <script type="module" src="/kocsik.js"></script>
+    <script type="module" src="/kocsik.js"></script>
 </body>
+
 </html>

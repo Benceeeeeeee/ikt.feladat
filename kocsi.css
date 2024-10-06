@@ -1,0 +1,58 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Elozo-btn {
+    left: 0;
+}
+
+.Kovi-btn {
+    right: 0;
+}
+
+.image-btn:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.rendezes {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    background-color: lightblue;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.color-btn {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.muszakiKartya {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
