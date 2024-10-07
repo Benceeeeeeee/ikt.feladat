@@ -11,3 +11,7 @@ select option {
 .kattintas{
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}
