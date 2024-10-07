@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2025 Ridgeline TrailSport</title>
 </head>
+
 <body>
-    <p>harmadik</p>
+    <div class="container">
+        <hr style="margin-top: 30px;">
+        <div>
+            <h1><strong>Autó konfigurátor</strong></h1>
+        </div>
+        <hr>
+
+        <div class="rendezes">
+            <div id="box" style=" position: relative; height: 100vh; width: 60%;">
+                <div class="image-container">
+                    <img id="kep"
+                        src="https://automobiles.honda.com/platform/api/v4/images/exterior/02?config=M:YK3F6SKNW$EC:R-580M$HC:undefined$IC:BK$O:$F:FIFS$ECC:RL$ECX:&width=1400+1"
+                        alt="honda" style="width: 770px; border: 1px solid black;">
+                    <button id="elozoKepGomb" class="btn btn-secondary image-btn Elozo-btn">&lt;</button>
+                    <button id="kovetkezoKepGomb" class="btn btn-secondary image-btn Kovi-btn">&gt;</button>
+                </div>
+
+                <hr style="margin-top: 30px;">
+                <div>
+                    <h2 style="text-align: center;"><strong>Műszaki adatok</strong></h2>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto; margin: 0 auto;"
+                                src="https://cdn-icons-png.flaticon.com/128/16907/16907273.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Kiváló terepjáró tulajdonságokkal és akár 500 Nm nyomatékkal rendelkezik. Az i-VTM4® összkerékhajtás és a terepgumik biztosítják a magabiztos vezetést bármilyen terepen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;"
+                                src="https://cdn-icons-png.flaticon.com/128/5102/5102816.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Az emelt hasmagasság és a strapabíró felfüggesztés kiemelkedő off-road teljesítményt nyújt, miközben a menetkényelem változatlan marad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;"
+                                src="https://cdn-icons-png.flaticon.com/128/8724/8724930.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">A hibrid hajtáslánc akár 700 km-es hatótávot* biztosít, alacsony CO₂-kibocsátás mellett.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top: 15px;">
+                        <div class="card muszakiKartya" style="width:250px;">
+                            <img style="width: 100px; margin: 0 auto;"
+                                src="https://cdn-icons-png.flaticon.com/128/1514/1514415.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">A Honda 5 év vagy 120 000 km hajtáslánc-garanciát* vállal a modellre, garantálva a megbízhatóságot minden úton.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box" style="background-color: rgba(211, 211, 211, 0.514); position: relative; width: 40%;">
+                <hr>
+                <div>
+                    <h2 style="text-align: center;"><strong>Tervezés</strong></h2>
+                </div>
+                <hr>
+                <div>
+                    <h6 style="text-align: center;"><strong>Szín</strong></h6>
+                </div>
+                <hr>
+                <div class="rendezes" style="display: flex; justify-content: center; gap: 10px;">
+                    <div style="text-align: center;">
+                        <button id="pirosSzin" class="color-btn category-btn"
+                            style="background-color: rgba(214,16,33,255);" data-set="piros">Piros</button>
+                        <p></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="feketeSzin" class="color-btn category-btn"
+                            style="background-color: black;color: white" data-set="fekete">Fekete</button>
+                        <p></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="kekSzin" class="color-btn category-btn"
+                            style="background-color: rgba(0,114,184,255); color: white;" data-set="kek">Kék</button>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="feherSzin" class="color-btn category-btn" style="background-color: white;"
+                            data-set="feher">Fehér</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <h6 style="text-align: center;"><strong>Felni</strong></h6>
+                </div>
+                <hr>
+                <div class="rendezes" style="display: flex; justify-content: center; gap: 10px;">
+                    <div>
+                        <button class="btn"
+                            style="background-image: url(https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/ridgeline/Build-and-Price/BAP-Modals/02-Wheels/TrailSport-18-inch-Pewter-Gray-Alloy-Wheels/MY25_Ridgeline_TrailSport_18-inch-Pewter_Gray_Alloy_Wheels_Thumb.jpg?sc_lang=en&hash=2B686F5EF7FBDAF99EB586CFF0E616DD);background-size: 150px;width: 150px; height: 130px;border: 1px solid black;"></button>
+                    </div>
+                    <div>
+                        <button class="btn"
+                            style="background-image: url(https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/ridgeline/Build-and-Price/BAP-Modals/02-Wheels/18-inch-Machined-Gray-Alloy-Wheels/MY25_Ridgeline_18-inch_Machined_Gray_Alloy_Wheels_Thumb.jpg?sc_lang=en&hash=580ECE4A68CB3E778E59BB02492E24F7);background-size: 150px;width: 150px; height: 130px;border: 1px solid black;"></button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <hr>
+                    <div>
+                        <h6 style="text-align: center;"><strong>Extrák</strong></h6>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra1" value="120000" onclick="updatePrice()">
+                        <label for="extra1">Tetőcsomagtartó (+120 000 Ft)</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra2" value="80000" onclick="updatePrice()">
+                        <label for="extra2">Üdvözlö fények oldalt (+80 000 Ft)</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra3" value="121000" onclick="updatePrice()">
+                        <label for="extra3">Küszöbléc megvilágítás (+121 000 Ft)</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra4" value="44500" onclick="updatePrice()">
+                        <label for="extra4">Plató sátor (+44 500 Ft)</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra5" value="85000" onclick="updatePrice()">
+                        <label for="extra5">Szélterelő (+85 000 Ft)</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra6" value="80000" onclick="updatePrice()">
+                        <label for="extra6">Kerékpár rögzítő (+80 000 Ft)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="extra7" value="155000" onclick="updatePrice()">
+                        <label for="extra6">Platóhosszabbító  (+155 000 Ft)</label>
+                    </div>
+                </div>
+                <hr>
+                <h2 style="text-align: center;">Összesített Ár: <span id="total-price">18 800 000 Ft</span></h2>
+                <button id="vasarlasgomb" style="float:right; margin: 25px;" class="btn btn-danger">Vásárlás</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/kocsi3.js"></script>
 </body>
+
 </html>
