@@ -54,22 +54,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const basePrice = 15000000;
 
   function updatePrice() {
-    let roofRackPrice = document.getElementById("roof-rack").checked ? parseInt(document.getElementById("roof-rack").value) : 0;
-    let heatedSeatsPrice = document.getElementById("heated-seats").checked ? parseInt(document.getElementById("heated-seats").value) : 0;
-    let navigationPrice = document.getElementById("navigation").checked ? parseInt(document.getElementById("navigation").value) : 0;
-    let winterTiresPrice = document.getElementById("winter-tires").checked ? parseInt(document.getElementById("winter-tires").value) : 0;
-    let raceTransmissionPrice = document.getElementById("race-transmission").checked ? parseInt(document.getElementById("race-transmission").value) : 0;
-    let nitroPrice = document.getElementById("nitro").checked ? parseInt(document.getElementById("nitro").value) : 0;
+    let extra1 = document.getElementById("extra1").checked ? parseInt(document.getElementById("extra1").value) : 0;
+    let extra2 = document.getElementById("extra2").checked ? parseInt(document.getElementById("extra2").value) : 0;
+    let extra3 = document.getElementById("extra3").checked ? parseInt(document.getElementById("extra3").value) : 0;
+    let extra4 = document.getElementById("extra4").checked ? parseInt(document.getElementById("extra4").value) : 0;
+    let extra5 = document.getElementById("extra5").checked ? parseInt(document.getElementById("extra5").value) : 0;
+    let extra6 = document.getElementById("extra6").checked ? parseInt(document.getElementById("extra6").value) : 0;
 
-    let totalPrice = basePrice + roofRackPrice + heatedSeatsPrice + navigationPrice + winterTiresPrice + raceTransmissionPrice + nitroPrice;
+    let totalPrice = basePrice + extra1 + extra2 + extra3 + extra4 + extra5 + extra6;
 
     document.getElementById("total-price").textContent = totalPrice.toLocaleString() + " Ft";
   }
 
-  document.getElementById("roof-rack").addEventListener("click", updatePrice);
-  document.getElementById("heated-seats").addEventListener("click", updatePrice);
-  document.getElementById("navigation").addEventListener("click", updatePrice);
-  document.getElementById("winter-tires").addEventListener("click", updatePrice);
-  document.getElementById("race-transmission").addEventListener("click", updatePrice);
-  document.getElementById("nitro").addEventListener("click", updatePrice);
+  document.getElementById("extra1").addEventListener("click", updatePrice);
+  document.getElementById("extra2").addEventListener("click", updatePrice);
+  document.getElementById("extra3").addEventListener("click", updatePrice);
+  document.getElementById("extra4").addEventListener("click", updatePrice);
+  document.getElementById("extra5").addEventListener("click", updatePrice);
+  document.getElementById("extra6").addEventListener("click", updatePrice);
 })
