@@ -48,11 +48,9 @@ document.querySelectorAll(".category-btn").forEach(button => {
     updateImage();
   });
 });
-// Alapértelmezett autóár (15 000 000 HUF)
 let basePrice = 15000000;
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Az árkalkuláció és képek váltásának logikája ide jön
   const basePrice = 15000000;
 
   function updatePrice() {
